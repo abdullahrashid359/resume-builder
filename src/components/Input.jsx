@@ -1,11 +1,21 @@
+function TextArea({label, name, value, placeholder, onChange}) {
+    return (
+        <label>
+            {label}
+            {' '}
+            <textarea value={value} name={name} placeholder={placeholder} onChange={onChange} required></textarea>
+        </label>
+    )
+}
+
 function Input({type, label, name, value, placeholder, onChange}) {
     return (
         <label>
             {label}
             {' '}
-            <input type={type} value={value} name={name} placeholder={placeholder} onChange={onChange}/>
+            <input type={type} value={value} name={name} placeholder={placeholder} onChange={onChange} required/>
         </label>
     )
 }
 
-export default Input;
+export { Input, TextArea };
