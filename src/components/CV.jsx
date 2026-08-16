@@ -48,7 +48,10 @@ function CV({ values, onEdit }) {
 
             </div>
 
-            <button type="button" onClick={onEdit}>Edit Details</button>
+            <div className="cv-actions">
+                <button type="button" onClick={onEdit}>Edit Details</button>
+                <button type="button" onClick={() => window.print()}>Download CV</button>
+            </div>
         </>
 
     )
