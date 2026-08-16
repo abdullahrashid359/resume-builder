@@ -4,7 +4,7 @@ A responsive CV/resume builder built with React. Users can enter their personal 
 
 ## Live Demo
 
-**Live:** (will be updated after deployment)
+**Live:** (https://resume-builder-gules-six.vercel.app/)
 
 
 ## Features
