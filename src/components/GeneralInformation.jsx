@@ -2,8 +2,7 @@ import { Input } from "./Input.jsx";
 
 function GeneralInformation({values, onChange}) {
     return (
-        <section className="general-info form-section">
-            <h2>General Information</h2>
+        <section className="general-info">
             <Input type="text" label="First Name" name="firstName" value={values["firstName"]} placeholder="John" onChange={onChange} />
             <Input type="text" label="Last Name" name="lastName" value={values["lastName"]} placeholder="Doe" onChange={onChange} />
             <Input type="email" label="Email" name="email" value={values["email"]} placeholder="e.g. xyz@gmail.com" onChange={onChange} />

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Form from './components/Form.jsx';
 import CV from './components/CV.jsx';
-import './App.css'
 
 function App() {
   const [mode, setMode] = useState(0) // 0 for editing, 1 for submission

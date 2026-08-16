@@ -1,0 +1,49 @@
+:root {
+    --color-background: #f4f5f7;
+    --color-surface: #ffffff;
+    --color-primary: #2563eb;
+    --color-primary-light: #e8eefc;
+    --color-primary-hover: #1d4ed8;
+    --color-text: #1f2937;
+    --color-text-muted: #6b7280;
+    --color-border: #d1d5db;
+
+    --radius-small: 6px;
+    --radius-medium: 10px;
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}

@@ -1,0 +1,138 @@
+.cv-page {
+    width: min(90%, 800px);
+    margin: var(--spacing-xl) auto;
+    padding: 3rem;
+    background-color: var(--color-surface);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.5;
+}
+
+.cv-general {
+    text-align: center;
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--color-text);
+}
+
+.cv-general h1 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    line-height: 1.1;
+}
+
+.cv-general p {
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+    color: var(--color-text-muted);
+}
+
+.cv-general p + p::before {
+    content: "|";
+    margin: 0 var(--spacing-md);
+    color: var(--color-border);
+}
+
+.cv-education,
+.cv-experience {
+    margin-top: var(--spacing-lg);
+}
+
+.cv-education > h2,
+.cv-experience > h2 {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.cv-entry {
+    margin-bottom: var(--spacing-lg);
+}
+
+.cv-entry:last-child {
+    margin-bottom: 0;
+}
+
+.cv-entry h3 {
+    font-size: 1.05rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.cv-entry p {
+    margin-top: 0.2rem;
+}
+
+.cv-company {
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
+.cv-entry ul {
+    margin-top: var(--spacing-sm);
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+}
+
+.cv-entry li {
+    font-size: 0.95rem;
+}
+
+.cv-entry li + li {
+    margin-top: 0.3rem;
+}
+
+.cv-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--spacing-md);
+}
+
+.cv-entry-header p {
+    flex-shrink: 0;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.cv-page + button {
+    display: block;
+    margin: 0 auto var(--spacing-xl);
+    background-color: var(--color-primary);
+    color: white;
+
+    transition:
+        background-color 180ms ease,
+        transform 180ms ease;
+}
+
+.cv-page + button:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    .cv-page {
+        padding: var(--spacing-lg);
+        margin: var(--spacing-lg) auto;
+    }
+
+    .cv-entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .cv-entry-header p {
+        white-space: normal;
+    }
+
+    .cv-general p {
+        display: block;
+        margin-left: 0;
+    }
+
+    .cv-general p + p::before {
+        content: none;
+    }
+}

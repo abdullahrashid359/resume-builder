@@ -1,6 +1,6 @@
-function TextArea({label, name, value, placeholder, onChange}) {
+function TextArea({label, name, className, value, placeholder, onChange}) {
     return (
-        <label>
+        <label className={className}>
             {label}
             {' '}
             <textarea value={value} name={name} placeholder={placeholder} onChange={onChange} required></textarea>
